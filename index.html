@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidad · Vhonce Academy</title>
-<meta name="description" content="Política de Privacidad de la aplicación Vhonce Academy. Uso del micrófono, datos personales, permisos y contacto.">
+<meta name="description" content="Política de Privacidad de la aplicación Vhonce Academy. Micrófono, cuenta de Google, suscripción, eliminación de datos y contacto.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1a0b2e">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E%F0%9F%8E%B5%3C/text%3E%3C/svg%3E">
@@ -179,7 +179,7 @@
   <div class="marca">Vhonce Academy</div>
   <h1>Política de Privacidad</h1>
   <div class="app">Aplicación <strong>Vhonce Academy</strong> · Criss Vhonce</div>
-  <div class="fecha">Última actualización: 25 de agosto de 2026</div>
+  <div class="fecha">Última actualización: 4 de octubre de 2026</div>
 </header>
 
 <main>
@@ -188,9 +188,9 @@
     <section>
       <h2><span class="num">1.</span>Introducción</h2>
       <p>
-        Esta Política de Privacidad describe cómo la aplicación
-        <strong>Vhonce Academy</strong> recopila, utiliza y protege la
-        información de sus usuarios.
+        Esta Política de Privacidad describe qué información trata la
+        aplicación <strong>Vhonce Academy</strong>, para qué la usa y cómo
+        puede el usuario controlarla o eliminarla.
       </p>
       <p>
         Vhonce Academy es una aplicación educativa dedicada a la enseñanza de
@@ -200,12 +200,24 @@
     </section>
 
     <section>
-      <h2><span class="num">2.</span>Información que recopilamos</h2>
+      <h2><span class="num">2.</span>Resumen</h2>
+      <ul>
+        <li>La aplicación se puede usar <strong>sin cuenta</strong>, como invitado.</li>
+        <li>Si el usuario decide entrar con Google, guardamos su <strong>nombre, su correo electrónico y un identificador de cuenta</strong>.</li>
+        <li>El <strong>micrófono</strong> se analiza en el propio dispositivo: no se graba ni se envía a ningún servidor.</li>
+        <li>Los <strong>pagos</strong> los gestiona Google Play. Nosotros no vemos ni guardamos datos de tarjetas.</li>
+        <li>La aplicación <strong>no muestra anuncios</strong> y no vende información a nadie.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">3.</span>Micrófono</h2>
       <p>
         Vhonce Academy utiliza el <strong>micrófono del dispositivo</strong>
         exclusivamente para analizar el sonido de la voz y de los instrumentos
         en tiempo real, con el fin de ofrecer las funciones educativas de la
-        aplicación (afinador, ejercicios de canto y herramientas de análisis).
+        aplicación (afinadores, ejercicios de canto, solfeo y herramientas de
+        análisis).
       </p>
       <p>La aplicación:</p>
       <ul class="no">
@@ -213,7 +225,6 @@
         <li><strong>No</strong> almacena grabaciones de voz.</li>
         <li><strong>No</strong> transmite audio a servidores externos.</li>
         <li><strong>No</strong> comparte información de audio con terceros.</li>
-        <li><strong>No</strong> recopila datos personales identificables a través del micrófono.</li>
       </ul>
       <div class="aviso">
         <p>
@@ -221,92 +232,189 @@
           se descarta en el instante en que deja de utilizarse la función.
         </p>
       </div>
-    </section>
-
-    <section>
-      <h2><span class="num">3.</span>Permiso de micrófono</h2>
-      <p>
+      <p style="margin-top:14px">
         El permiso de micrófono se solicita únicamente cuando el usuario abre
-        una función que lo necesita. El procesamiento del sonido es
-        <strong>local</strong>: ocurre en el dispositivo y no sale de él.
-      </p>
-      <p>
-        El usuario puede <strong>revocar este permiso en cualquier momento</strong>
-        desde la configuración de su dispositivo. Al hacerlo, el resto de la
-        aplicación sigue funcionando con normalidad; solo dejarán de estar
-        disponibles las funciones que dependen del micrófono.
+        una función que lo necesita, y puede <strong>revocarse en cualquier
+        momento</strong> desde la configuración del dispositivo. El resto de la
+        aplicación sigue funcionando con normalidad.
       </p>
     </section>
 
     <section>
-      <h2><span class="num">4.</span>Recopilación de datos personales</h2>
+      <h2><span class="num">4.</span>Cuenta de usuario (opcional)</h2>
       <p>
-        Vhonce Academy <strong>no recopila, no almacena y no vende</strong>
-        información personal de sus usuarios. La aplicación no solicita
-        nombre, correo electrónico, número de teléfono, ubicación ni ningún
-        otro dato identificable, y no requiere la creación de una cuenta para
-        utilizarse.
+        El usuario puede entrar en la aplicación con su cuenta de Google
+        («Continuar con Google»). Es <strong>opcional</strong>: la aplicación
+        funciona también como invitado. Entrar con Google es necesario para
+        suscribirse desde la aplicación.
+      </p>
+      <p>Al entrar con Google, la aplicación recibe y guarda:</p>
+      <ul>
+        <li>El <strong>nombre</strong> asociado a la cuenta de Google.</li>
+        <li>La <strong>dirección de correo electrónico</strong>.</li>
+        <li>Un <strong>identificador de cuenta</strong> generado para la aplicación.</li>
+      </ul>
+      <p>
+        Estos datos se usan únicamente para identificar la cuenta del usuario
+        dentro de Vhonce Academy y mostrar su nombre en la aplicación. No se
+        usan para publicidad ni se venden o ceden a terceros.
       </p>
       <p>
-        El progreso dentro de los juegos y ejercicios, cuando se guarda,
-        permanece almacenado únicamente en el dispositivo del usuario.
+        El inicio de sesión se realiza mediante <strong>Firebase
+        Authentication</strong>, un servicio de Google, que almacena estos datos
+        en servidores de Google. Por motivos de seguridad, ese servicio puede
+        registrar además datos técnicos de la conexión, como la dirección IP y
+        el tipo de dispositivo. La aplicación nunca recibe ni conoce la
+        contraseña de la cuenta de Google.
       </p>
     </section>
 
     <section>
-      <h2><span class="num">5.</span>Servicios de terceros</h2>
+      <h2><span class="num">5.</span>Suscripción y pagos</h2>
       <p>
-        La aplicación se distribuye a través de <strong>Google Play</strong>,
-        que puede recopilar información conforme a sus propias políticas de
-        privacidad como parte de la distribución y el funcionamiento de las
-        aplicaciones en la plataforma.
+        Vhonce Academy ofrece una suscripción mensual («Premium») que desbloquea
+        contenido adicional. La compra, el cobro y la renovación los gestiona
+        íntegramente <strong>Google Play</strong>.
+      </p>
+      <ul class="no">
+        <li><strong>No</strong> recibimos ni almacenamos datos de tarjetas ni de otros medios de pago.</li>
+      </ul>
+      <p>
+        La aplicación solo consulta a Google Play si la suscripción está
+        activa, y guarda esa respuesta en el propio dispositivo para poder
+        funcionar unos días sin conexión. La suscripción se puede cancelar en
+        cualquier momento desde Google Play
+        (<a href="https://play.google.com/store/account/subscriptions" rel="noopener">play.google.com/store/account/subscriptions</a>).
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">6.</span>Información que se queda en el dispositivo</h2>
+      <p>
+        El progreso en los cursos y juegos, los ajustes de las herramientas,
+        las afinaciones personalizadas y los recordatorios de práctica que el
+        usuario programe se guardan <strong>únicamente en su dispositivo</strong>.
+        No se envían a ningún servidor y se borran al desinstalar la
+        aplicación o al borrar sus datos.
       </p>
       <p>
-        Puede consultar la política de privacidad de Google en
+        Las <strong>notificaciones</strong> y alarmas de práctica las genera la
+        propia aplicación en el dispositivo, a la hora que el usuario elige.
+        El permiso de notificaciones se puede retirar desde la configuración
+        del dispositivo.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">7.</span>Lo que no hacemos</h2>
+      <ul class="no">
+        <li><strong>No</strong> mostramos publicidad.</li>
+        <li><strong>No</strong> vendemos ni alquilamos datos personales.</li>
+        <li><strong>No</strong> usamos la ubicación, los contactos, la cámara ni los archivos del dispositivo.</li>
+        <li><strong>No</strong> elaboramos perfiles publicitarios de los usuarios.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">8.</span>Servicios de terceros</h2>
+      <p>La aplicación utiliza los siguientes servicios de Google:</p>
+      <ul>
+        <li><strong>Google Play</strong>: distribución de la aplicación y gestión de la suscripción.</li>
+        <li><strong>Firebase Authentication</strong>: inicio de sesión con la cuenta de Google.</li>
+      </ul>
+      <p>
+        Estos servicios tratan la información conforme a la política de
+        privacidad de Google, disponible en
         <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.
       </p>
     </section>
 
-    <section>
-      <h2><span class="num">6.</span>Seguridad</h2>
+    <section id="eliminar">
+      <h2><span class="num">9.</span>Conservación y eliminación de datos</h2>
       <p>
-        Dado que la aplicación no recopila ni transmite datos personales, no
-        existe información del usuario almacenada en servidores externos. El
-        procesamiento se realiza en el dispositivo, lo que reduce al mínimo
-        cualquier riesgo asociado al tratamiento de datos.
+        Los datos de la cuenta se conservan mientras la cuenta exista. El
+        usuario puede <strong>eliminar su cuenta y los datos asociados</strong>
+        en cualquier momento, de dos formas:
+      </p>
+      <ul>
+        <li>
+          <strong>Desde la aplicación:</strong> icono de la cuenta (esquina
+          superior derecha) → «Administrar cuenta» → «Eliminar mi cuenta».
+        </li>
+        <li>
+          <strong>Por correo:</strong> escribiendo a
+          <a href="mailto:crsdd2@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Vhonce%20Academy">crsdd2@gmail.com</a>
+          desde la dirección con la que se registró. La solicitud se atiende en
+          un plazo máximo de 30 días.
+        </li>
+      </ul>
+      <p>
+        Al eliminar la cuenta se borran el nombre, el correo y el identificador
+        guardados para Vhonce Academy. La cuenta de Google del usuario no se ve
+        afectada.
+      </p>
+      <div class="aviso">
+        <p>
+          Eliminar la cuenta <strong>no cancela la suscripción</strong>: esta
+          pertenece a la cuenta de Google Play y debe cancelarse desde Google
+          Play para que no se siga cobrando.
+        </p>
+      </div>
+      <p style="margin-top:14px">
+        Más detalles en la página
+        <a href="eliminar-cuenta.html">Cómo eliminar tu cuenta</a>.
       </p>
     </section>
 
     <section>
-      <h2><span class="num">7.</span>Privacidad de menores</h2>
+      <h2><span class="num">10.</span>Derechos del usuario</h2>
       <p>
-        Vhonce Academy es apta para todos los públicos y
-        <strong>no recopila información personal de menores de edad</strong>,
-        del mismo modo que no la recopila de ningún otro usuario.
+        El usuario puede solicitar en cualquier momento conocer, actualizar,
+        rectificar o suprimir sus datos personales, así como retirar la
+        autorización para tratarlos, escribiendo al correo de contacto
+        indicado más abajo.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">11.</span>Seguridad</h2>
+      <p>
+        Los datos de la cuenta se guardan en la infraestructura de Google
+        (Firebase), y la comunicación con ella va cifrada. El resto de la
+        información permanece en el dispositivo del usuario. Ningún sistema es
+        completamente infalible, pero limitamos los datos que tratamos al
+        mínimo necesario para reducir cualquier riesgo.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">12.</span>Privacidad de menores</h2>
+      <p>
+        Vhonce Academy puede usarse como invitado sin proporcionar ningún dato
+        personal. Para entrar con una cuenta de Google o suscribirse, el
+        usuario debe cumplir los requisitos de edad de Google para tener una
+        cuenta, o hacerlo con la autorización y supervisión de su padre, madre
+        o tutor.
       </p>
       <p>
         Si un padre, madre o tutor considera que un menor ha proporcionado
-        algún tipo de información, puede ponerse en contacto con nosotros a
-        través del correo indicado más abajo para solicitar su eliminación.
+        datos sin su autorización, puede escribirnos al correo indicado más
+        abajo para solicitar su eliminación.
       </p>
     </section>
 
     <section>
-      <h2><span class="num">8.</span>Cambios en esta Política de Privacidad</h2>
+      <h2><span class="num">13.</span>Cambios en esta Política de Privacidad</h2>
       <p>
-        Esta Política de Privacidad puede actualizarse ocasionalmente para
-        reflejar mejoras en la aplicación o cambios en la normativa aplicable.
-        Cualquier modificación se publicará en esta misma página, junto con la
-        fecha de la última actualización.
-      </p>
-      <p>
-        Se recomienda revisar esta página periódicamente para estar al tanto de
-        posibles cambios.
+        Esta Política de Privacidad puede actualizarse para reflejar cambios en
+        la aplicación o en la normativa aplicable. Cualquier modificación se
+        publicará en esta misma página, junto con la fecha de la última
+        actualización.
       </p>
     </section>
 
     <section>
-      <h2><span class="num">9.</span>Contacto</h2>
+      <h2><span class="num">14.</span>Contacto</h2>
       <p>
         Si tiene preguntas, comentarios o solicitudes relacionadas con esta
         Política de Privacidad, puede escribirnos:
@@ -332,7 +440,7 @@
 
 <footer>
   © 2026 Vhonce Academy · Desarrollado por <i>Criss Vhonce</i><br>
-  Última actualización de esta política: 25 de agosto de 2026
+  Última actualización de esta política: 4 de octubre de 2026
 </footer>
 
 </body>

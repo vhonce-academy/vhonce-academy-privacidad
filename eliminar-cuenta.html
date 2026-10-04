@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminar tu cuenta · Vhonce Academy</title>
+<meta name="description" content="Cómo eliminar tu cuenta de Vhonce Academy y los datos asociados.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1a0b2e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E%F0%9F%8E%B5%3C/text%3E%3C/svg%3E">
+<style>
+  /* Sin CDN: tipografías del sistema, todo el CSS aquí dentro.
+     La página es un único archivo estático, sin scripts ni formularios:
+     eso es exactamente lo que Google pide — una web normal y no editable. */
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{
+    --tinta:#1d2233;
+    --tinta-suave:#4a5268;
+    --linea:#e4e7ef;
+    --fondo:#f6f7fb;
+    --papel:#ffffff;
+    --morado:#6200ea;
+    --cian:#00a8c8;
+    --oscuro:#1a0b2e;
+  }
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--fondo);
+    color:var(--tinta);
+    line-height:1.7;
+    font-size:17px;
+  }
+
+  /* ── Cabecera ─────────────────────────────────────────────── */
+  header{
+    background:
+      radial-gradient(120% 140% at 50% 0%, rgba(98,0,234,.55) 0%, transparent 62%),
+      radial-gradient(100% 120% at 85% 100%, rgba(0,168,200,.35) 0%, transparent 60%),
+      var(--oscuro);
+    color:#fff;
+    padding:52px 22px 44px;
+    text-align:center;
+  }
+  .marca{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:.78rem;font-weight:700;letter-spacing:.20em;text-transform:uppercase;
+    color:rgba(255,255,255,.72);
+    border:1px solid rgba(255,255,255,.22);
+    border-radius:999px;
+    padding:7px 16px;
+    margin-bottom:22px;
+  }
+  header h1{
+    font-size:2rem;line-height:1.2;font-weight:800;letter-spacing:-.01em;
+    margin-bottom:12px;
+  }
+  header .app{
+    font-size:1.02rem;color:rgba(255,255,255,.80);
+  }
+  /* El <strong> general es tinta oscura; sobre la cabecera oscura
+     desaparecería, así que aquí se aclara. */
+  header strong{color:#fff;font-weight:700;}
+  header .fecha{
+    margin-top:18px;font-size:.84rem;letter-spacing:.06em;
+    color:rgba(255,255,255,.58);
+  }
+
+  /* ── Cuerpo ───────────────────────────────────────────────── */
+  main{
+    max-width:760px;
+    margin:-26px auto 0;
+    padding:0 18px 64px;
+  }
+  .hoja{
+    background:var(--papel);
+    border:1px solid var(--linea);
+    border-radius:16px;
+    padding:38px 34px 34px;
+    box-shadow:0 14px 40px rgba(24,28,48,.07);
+  }
+  section{padding-top:30px;}
+  section:first-of-type{padding-top:0;}
+  section + section{border-top:1px solid var(--linea);margin-top:30px;}
+  h2{
+    font-size:1.22rem;font-weight:750;line-height:1.35;
+    margin-bottom:12px;
+    color:var(--tinta);
+  }
+  h2 .num{
+    color:var(--morado);
+    font-variant-numeric:tabular-nums;
+    margin-right:8px;
+  }
+  p{margin-bottom:14px;color:var(--tinta-suave);}
+  p:last-child{margin-bottom:0;}
+  strong{color:var(--tinta);font-weight:650;}
+
+  ul{list-style:none;margin:6px 0 16px;}
+  ul li{
+    position:relative;
+    padding-left:30px;
+    margin-bottom:10px;
+    color:var(--tinta-suave);
+  }
+  ul li::before{
+    content:"";
+    position:absolute;left:8px;top:.72em;
+    width:7px;height:7px;border-radius:50%;
+    background:var(--cian);
+  }
+  ul.no li::before{
+    content:"✕";
+    left:6px;top:0;
+    width:auto;height:auto;border-radius:0;background:none;
+    color:#d13a4a;font-weight:700;font-size:.92rem;
+  }
+
+  .aviso{
+    background:rgba(0,168,200,.07);
+    border:1px solid rgba(0,168,200,.28);
+    border-left:4px solid var(--cian);
+    border-radius:10px;
+    padding:16px 18px;
+    margin:18px 0 4px;
+  }
+  .aviso p{color:var(--tinta);margin:0;font-size:.96rem;}
+
+  .contacto{
+    display:grid;gap:12px;
+    margin-top:6px;
+  }
+  .contacto div{
+    background:var(--fondo);
+    border:1px solid var(--linea);
+    border-radius:10px;
+    padding:14px 16px;
+  }
+  .contacto span{
+    display:block;
+    font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--tinta-suave);
+    margin-bottom:4px;
+  }
+  .contacto b{font-weight:650;font-size:1.02rem;}
+  a{color:var(--morado);text-decoration:none;border-bottom:1px solid rgba(98,0,234,.35);}
+  a:hover{border-bottom-color:var(--morado);}
+
+  footer{
+    text-align:center;
+    padding:30px 18px 44px;
+    color:#8a91a6;
+    font-size:.84rem;
+    line-height:1.7;
+  }
+  footer i{color:#6b7288;}
+
+  @media (max-width:560px){
+    body{font-size:16px;}
+    header{padding:40px 18px 40px;}
+    header h1{font-size:1.6rem;}
+    .hoja{padding:28px 20px 26px;border-radius:14px;}
+    h2{font-size:1.1rem;}
+  }
+
+  @media print{
+    body{background:#fff;}
+    header{background:#fff;color:#000;padding:0 0 18px;}
+    header .marca{color:#000;border-color:#999;}
+    header .fecha{color:#444;}
+    main{margin:0;padding:0;}
+    .hoja{border:none;box-shadow:none;padding:0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="marca">Vhonce Academy</div>
+  <h1>Cómo eliminar tu cuenta</h1>
+  <div class="app">Aplicación <strong>Vhonce Academy</strong> · Criss Vhonce</div>
+  <div class="fecha">Última actualización: 4 de octubre de 2026</div>
+</header>
+
+<main>
+  <div class="hoja">
+
+    <section>
+      <h2><span class="num">1.</span>Qué es esta página</h2>
+      <p>
+        Aquí se explica cómo eliminar la cuenta de la aplicación
+        <strong>Vhonce Academy</strong> (desarrollador: Criss Vhonce) y los
+        datos asociados a ella.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">2.</span>Eliminarla desde la aplicación</h2>
+      <ul>
+        <li>Abre Vhonce Academy.</li>
+        <li>Toca el <strong>icono de la cuenta</strong>, en la esquina superior derecha del menú.</li>
+        <li>Toca <strong>«Administrar cuenta»</strong>.</li>
+        <li>Toca <strong>«Eliminar mi cuenta»</strong> y confirma.</li>
+      </ul>
+      <p>
+        Por seguridad, si hace tiempo que iniciaste sesión, la aplicación puede
+        pedirte que cierres sesión y vuelvas a entrar antes de eliminarla.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">3.</span>Eliminarla sin la aplicación</h2>
+      <p>
+        Si ya no tienes la aplicación instalada, escribe a
+        <a href="mailto:crsdd2@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Vhonce%20Academy">crsdd2@gmail.com</a>
+        con el asunto «Eliminar mi cuenta de Vhonce Academy», <strong>desde la
+        misma dirección de correo con la que entraste en la aplicación</strong>.
+        La solicitud se atiende en un plazo máximo de 30 días.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">4.</span>Qué se elimina</h2>
+      <ul>
+        <li>Tu <strong>nombre</strong> y tu <strong>correo electrónico</strong> guardados para Vhonce Academy.</li>
+        <li>El <strong>identificador de tu cuenta</strong> en la aplicación.</li>
+      </ul>
+      <p>
+        No queda ningún dato de la cuenta conservado después de eliminarla. Tu
+        cuenta de Google no se ve afectada.
+      </p>
+      <p>
+        El progreso, los ajustes y los recordatorios están guardados solo en tu
+        dispositivo: se borran al desinstalar la aplicación o al borrar sus
+        datos desde la configuración del teléfono.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">5.</span>Si tienes una suscripción</h2>
+      <div class="aviso">
+        <p>
+          Eliminar la cuenta <strong>no cancela la suscripción Premium</strong>.
+          La suscripción pertenece a tu cuenta de Google Play: cancélala en
+          <a href="https://play.google.com/store/account/subscriptions" rel="noopener">play.google.com/store/account/subscriptions</a>
+          para que no se siga cobrando.
+        </p>
+      </div>
+      <p style="margin-top:14px">
+        Google Play conserva el historial de compras conforme a sus propias
+        políticas; esa información no está en nuestro poder.
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">6.</span>Más información</h2>
+      <p>
+        Consulta la <a href="index.html">Política de Privacidad</a> completa de
+        Vhonce Academy.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 Vhonce Academy · Desarrollado por <i>Criss Vhonce</i><br>
+  Última actualización de esta página: 4 de octubre de 2026
+</footer>
+
+</body>
+</html>
